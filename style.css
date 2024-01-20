@@ -1,0 +1,654 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow-x: hidden;
+  background-color: #222222;
+
+
+  font-family: "Inter", sans-serif;
+}
+#loginScreen {
+  display: none;
+}
+#registerScreen{
+  display:none;
+}
+#loginScreen .info-container {
+  margin-top: 200px;
+  margin-right: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fluid {
+  width: 293px;
+  height: 304px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 547px;
+  height: 591px;
+  padding: 50px;
+  border-radius: 20px;
+  background: #F2F2F2;
+}
+
+.card-header {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  background: #F2F2F2;
+}
+
+.btn-primary,
+.btn-secondary {
+  width: 400px;
+  height: 49px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  gap: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #105F74;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #F2F2F2;
+  color: #105F74;
+  border: 1px solid #105F74;
+}
+
+.terms-condition {
+  font-size: 16px;
+}
+
+.terms-condition span {
+  text-decoration: underline;
+  color: #105F74;
+}
+
+.terms-condition input:hover,
+.terms-condition span:hover, .menu-item ion-icon:hover, img:hover,
+.input-group-text{
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #108290;
+  border-color: #108290;
+}
+
+p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+#registerScreen .info-container {
+  margin-top: 100px;
+}
+
+#registerScreen .card {
+  width: 547px;
+  height: 767px;
+  padding: 50px;
+  border-radius: 20px;
+}
+#registerScreen .img-fluid{
+  margin-left: 200px;
+}
+ion-icon {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+ion-icon:hover, .tweet-buttons button:hover {
+  transform: scale(1.2);
+}
+
+.ig img{
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.top-menu-mobile,
+.bottom-menu-mobile {
+  display: none;
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  margin: 150px 150px 0 auto;
+  width: 1400px;
+  color: white;
+}
+.menu {
+  position: fixed;
+  left: 100px;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 20px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.menu-item span{
+  margin-left: 10px;
+}
+
+.header {
+  color: white;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background-color: #222222;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+
+.top-menu {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 145px;
+}
+
+.TTwitter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 145px;
+}
+.pesquisar {
+  Width: 823px;
+  Height: 43px;
+  background-color: #46494C;
+  border: 1px solid #46494C;
+  border-radius: 20px;
+  color: #46494C;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.pesquisar ion-icon{
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 32px;
+}
+input{
+  color: white;
+  background-color: #222222;
+}
+input:focus{
+  outline: none;
+}
+.pesquisar input[type="text"] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #C5C3C6;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  background-color: #46494C;
+}
+
+.main {
+  height: 100%;
+  width: 614px;
+}
+.Tweet-menu{
+  border: solid 1px #4C5C68;
+  margin-bottom: 50px;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Tweet-menu input[type="text"] {
+  border: none;
+  background-color: #222222;
+  width: 612px;
+  height: 70px;
+  padding: 20px;
+}
+.tweet-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+}
+.tweet-buttons > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 25px;
+}
+.tweet-buttons button{
+  Width: 98px;
+  Height: 40px;
+  border-radius: 10px;
+  border-color: transparent;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #1985A1;
+}
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 614px;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.top-feed {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  height: 60px;
+  width: 614px;
+
+  border-radius: 3px;
+  border: 1px solid #46494C;
+  background-color: #222222;
+}
+
+img.feed-profile-image {
+  margin: 15px 15px 14px 17px;
+  width: 32px;
+  height: 32px;
+}
+
+.top-feed ion-icon {
+  position: absolute;
+  top: 19px;
+  bottom: 15px;
+  right: 15px;
+}
+
+img.feed-post,
+.video-post {
+  background-color: black;
+  margin: auto;
+  width: 612px;
+  height: 612px;
+}
+
+.bottom-feed {
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 614px;
+  border-radius: 3px;
+  border: 1px solid #46494C;
+  background-color: #222222;
+}
+
+.reactions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-bottom {
+  margin-left: 18px;
+  width: 100px;
+  height: 39px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-bottom {
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.reactions-info {
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likes p {
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.comments-section p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.see-more p {
+  color: #0095f6;
+}
+
+.comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.see-more:hover {
+  cursor: pointer;
+}
+
+.comments ion-icon {
+  font-size: 14px;
+  color: #c7c7c7;
+}
+
+.like-commentary {
+  padding-right: 7px;
+}
+
+.add-comment {
+  display: flex;
+  align-items: center;
+}
+
+.add-comment ion-icon {
+  padding: 7px 7px 0 0;
+  font-size: 14px;
+  color: #b2dffc;
+}
+
+.comment-box {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.comment-box input[type="text"] {
+  border: none;
+  font-size: 14px;
+  flex: 1;
+  font-size: 12px;
+}
+
+.comment-box button[type="submit"] {
+  background-color: #222222;
+  color: #b2dffc;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.comment-box button[type="submit"]:hover {
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.reactions-profile-image {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar {
+  margin-top: 23px;
+  width: 293px;
+}
+
+.sidebar-mask {
+  width: 1400px;
+  margin: 0px auto 0 auto;
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  justify-content: right;
+}
+
+img.profile-cover {
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+}
+
+.my-profile {
+  margin-right: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-info {
+  padding-top: 30px;
+  padding-right: 10px;
+}
+
+.profile-info p {
+  text-align: end;
+  margin-top: 3px;
+  font-weight: 300;
+  font-size: 14px;
+
+  color: #8e8e8e;
+}
+
+.suggestions-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestions-text h2 {
+  font-size: 12px;
+}
+
+.suggestions-text p {
+  color: #8e8e8e;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.suggested-profiles {
+  display: flex;
+  position: relative;
+
+  height: 32px;
+  margin-top: 17px;
+}
+
+.suggestions-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 12px;
+}
+
+.suggestions-info p {
+  color: #8e8e8e;
+}
+
+h2.follow-status {
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  color: #139ef2;
+  font-size: 12px;
+}
+
+.random-bullshit {
+  margin-top: 33px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #c7c7c7;
+}
+
+.random-bullshit p {
+  margin-top: 33px;
+}
+
+ion-icon.filled {
+  color: red;
+}
+
+@media (max-width: 1300px) {
+  .page-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .my-profile{
+    margin: 0;
+  }
+
+  .top-menu {
+    margin-left: 21.38px;
+    margin-right: 18.06px;
+    width: 100%;
+  }
+  .pesquisar{
+    width: 100%;
+    margin: 0 50px 0 50px;
+  }
+
+  .sidebar, .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 772px) {
+
+  .sidebar,
+  .sidebar-mask,
+  .top-border,
+  .top-menu {
+    display: none;
+  }
+  .top-menu-mobile img{
+    width: 50px;
+    height: 50px;
+  }
+  .top-menu-mobile h2{
+    font-size: 24px;
+  }
+  .main{
+    margin-top: 100px;
+  }
+  .Tweet-menu,.feed,
+  .top-feed,
+  img.feed-post,
+  .video-post,
+  .bottom-feed,
+  .top-menu-mobile,
+  .page-content,
+  .main{
+    width: 100%;
+  }
+
+  .top-menu-mobile {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .bottom-menu-mobile {
+    background-color: #222222;
+    border: 1px solid #46494C;
+    display: block;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .arrow-button {
+    display: none;
+  }
+
+  .page-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .top-buttons {
+    width: 17.87px;
+  }
+
+  .TTwitter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .top-feed,
+  .bottom-feed {
+    border-radius: none;
+    border-right: none;
+    border-left: none;
+  }
+}
